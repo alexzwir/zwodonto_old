@@ -17,8 +17,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from website.core import views
+from website.contact import views as contact_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index),
+    url(r'^fale-conosco/$', contact_views.contact),
 ]
