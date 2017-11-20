@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index),
     url(r'^fale-conosco/$', contact_views.contact),
+    url(r'^saving_contact', contact_views.saving_contact),
 ]

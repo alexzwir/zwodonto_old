@@ -1,3 +1,5 @@
-<h1>Teste</h1>
-
-{{ form }}
+<form class="" action="/saving_contact" method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" name="" value="Enviar">
+</form>
