@@ -22,6 +22,10 @@ from website.contact import views as contact_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.index),
-    url(r'^fale-conosco/$', contact_views.contact),
+    url(r'^sobre-nos/$', views.sobre_nos),
+    url(r'^equipe/$', views.equipe),
+    url(r'^especialidades/$', views.especialidades),
+    url(r'^como-chegar/$', views.como_chegar),
+    url(r'^contato/$', contact_views.contact),
     url(r'^saving_contact', contact_views.saving_contact),
 ]

@@ -7,7 +7,7 @@ from django.http import HttpResponseRedirect
 # Create your views here.
 def contact(request):
     form = ContactForm()
-    return render(request,"contact.html",{"form":form})
+    return render(request,"contato.html",{"form":form})
 
 def saving_contact(request):
     form = ContactForm(request.POST)
