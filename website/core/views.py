@@ -16,3 +16,5 @@ def especialidades(request):
 
 def como_chegar(request):
 	return render(request,'como-chegar.html',{})
+
+

@@ -18,6 +18,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from website.core import views
 from website.contact import views as contact_views
+from website.blog import views as blog_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,4 +29,5 @@ urlpatterns = [
     url(r'^como-chegar/$', views.como_chegar),
     url(r'^contato/$', contact_views.contact),
     url(r'^saving_contact', contact_views.saving_contact),
+    url(r'^blog/$', blog_views.index),
 ]
