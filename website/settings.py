@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEGUB',default=True,cast=bool)
 
-ALLOWED_HOSTS = ['.localhost','127.0.0.1','herokuapp.com','zwodonto.com.br']
+ALLOWED_HOSTS = ['.localhost','127.0.0.1','herokuapp.com','zwodonto.com.br','zwodonto.com.br.herokudns.com','www.zwodonto.com.br.herokudns.com','www.zwodonto.com.br']
 
 # Application definition
 
